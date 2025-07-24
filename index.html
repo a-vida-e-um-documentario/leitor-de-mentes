@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leitor de Mente</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/x-png"/>
+</head>
+<body>
+  <div class="container">
+    <h1>escolha qualquer número que você quiser, eu lerei sua mente</h1>
+    <input type="number" id="numero" placeholder="Digite um número" />
+    <button onclick="iniciar()">Ler Mente</button>
+    
+    <div id="etapas" class="hidden">
+      <p id="mensagem"></p>
+      <div class="loader"></div>
+    </div>
+
+    <div id="resultado" class="hidden">
+      <img id="explosao-img" src="img/explosion.gif" class="explosao" style="display: none;" alt="Explosão" />
+      <h2 id="resultado-numero" style="display: none;"></h2>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
